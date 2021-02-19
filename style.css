@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,500;1,700&display=swap");
+
+body {
+  font-family: "Mulish", sans-serif;
+  background: #544a7d; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #ffd452,
+    #544a7d
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #ffd452,
+    #544a7d
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.nav-pills .nav-item .nav-link.active {
+  background-color: #544a7d;
+}
+
+.profile-tab {
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10%;
+  padding: 3em;
+  width: 60%;
+  background-color: white;
+  border-radius: 1em;
+  animation: fadeUp 0.5s forwards;
+  box-shadow: 10px 10px  rgb(0, 0, 0);
+}
+
+#pills-home {
+  text-align: center;
+}
+
+#pills-home h3 {
+    margin-top: 1em;
+}
+
+.social-media ul {
+  margin: 1em;
+  list-style: none;
+  text-align: center;
+}
+
+.social-media li {
+  margin: 1em;
+  display: inline;
+  cursor: pointer;
+}
+
+.social-media img {
+  width: 7.5%;
+  transition: 0.5s;
+}
+
+.social-media img:hover {
+  width: 10%;
+}
+@media screen and (max-width: 991.98px) {
+  .profile-tab {
+    padding: 2em;
+    width: 90%;
+  }
+}
+
+@keyframes fadeUp {
+  0% {
+    transform: translateY(4rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
